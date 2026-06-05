@@ -24,7 +24,7 @@
 | Path | Contents |
 |:--|:--|
 | `docs/` | Datasheets, specifications, adapter schematics |
-| `examples/` | **Sample projects** grouped by feature |
+| `examples/` | **Sample projects** grouped by feature (ESP-IDF, Linux, etc.) |
 
 ### `examples/` layout
 
@@ -33,6 +33,7 @@
 | `examples/` root | **ESP-IDF代码** (esp-lvgl-port + LVGL9) |
 | `with-te/` | Tear-related samples (**屏幕防撕裂代码**) |
 | `camera/` | Display with camera (**屏幕配合摄像头代码**) |
+| `linux/` | **Linux reference** (RK3566 device tree + ST7123 touch) |
 
 ### Sample project paths
 
@@ -53,3 +54,7 @@
 | Description | Path |
 |:--|:--|
 | ST7102 MIPI + SC2336 camera preview | `examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/` |
+
+#### Linux reference (`linux/`）
+
+See **[`examples/linux/README_EN.md`](examples/linux/README_EN.md)**.

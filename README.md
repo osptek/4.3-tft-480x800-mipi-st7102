@@ -24,7 +24,7 @@
 | 路径 | 说明 |
 |:--|:--|
 | `docs/` | 数据手册、规格说明、转接板原理图等 |
-| `examples/` | 按功能分类的 **示例工程** |
+| `examples/` | 按功能分类的 **示例工程**（含 ESP-IDF、Linux 等） |
 
 ### `examples/` 分类
 
@@ -33,6 +33,7 @@
 | `examples/` 根目录 | **ESP-IDF代码**（esp-lvgl-port + LVGL9） |
 | `with-te/` | **屏幕防撕裂代码** |
 | `camera/` | **屏幕配合摄像头代码** |
+| `linux/` | **Linux 参考驱动**（RK3566 设备树 + ST7123 触摸） |
 
 ### 示例工程路径
 
@@ -53,3 +54,7 @@
 | 说明 | 路径 |
 |:--|:--|
 | ST7102 MIPI + SC2336 摄像头预览 | `examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/` |
+
+#### Linux 参考驱动（`linux/`）
+
+文件说明见 **[`examples/linux/README.md`](examples/linux/README.md)**。
