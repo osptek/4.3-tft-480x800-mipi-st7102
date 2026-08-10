@@ -47,6 +47,7 @@
 <p align="center"><img alt="YDP430BT009-V1" src="./images/YDP430BT009-V1.png" width="320" /></p>
 
 **说明：** 带触摸（ST7123）。
+
 ---
 
 ## 如何切换分支

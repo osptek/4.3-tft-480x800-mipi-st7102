@@ -47,6 +47,7 @@ Repo id: `4.3-tft-480x800-mipi-st7102`
 <p align="center"><img alt="YDP430BT009-V1" src="./images/YDP430BT009-V1.png" width="320" /></p>
 
 **Notes:** With touch (ST7123).
+
 ---
 
 ## How to Switch Branches
