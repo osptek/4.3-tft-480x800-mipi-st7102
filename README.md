@@ -2,7 +2,7 @@
 
 <h1 align="center">OSPTEK 4.3″ TFT 480×800（ST7102 · MIPI）</h1>
 
-<p align="center"><b>触摸 TFT 模组 · MIPI DSI · ST7102</b></p>
+<p align="center"><b>TFT 模组 · MIPI · ST7102 · 多版本索引</b></p>
 
 <p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
 
@@ -13,90 +13,58 @@
   <img alt="Driver: ST7102" src="https://img.shields.io/badge/Driver-ST7102-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 4.3 寸 480×800 TFT MIPI 模组（ST7102）宣传图" src="./images/product.png" width="640" /></p>
-
 ## 目录
 
-- [产品简介](#产品简介)
-- [规格参数](#规格参数)
-- [示例工程](#示例工程)
-- [仓库结构](#仓库结构)
-- [相关资料](#相关资料)
+- [说明](#说明)
+- [版本一览](#版本一览)
+- [YDP430BT009-V1](#ydp430bt009-v1)
+- [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 产品简介
+## 说明
 
-OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组，显示驱动为 **ST7102**，触摸驱动为 **ST7123**。适合中小尺寸 HMI、手持终端与竖屏信息面板等场景。
+本仓库收录 **4.3 寸 480×800 TFT（MIPI · ST7102）** 显示模组资料。
+
+**`main` 为导航页**（仓库默认分支）。下表可快速浏览各版本；点击「说明」跳转到本页下方的详细介绍。需要某一版本的完整内容时，请切换到对应**版本分支**（方法见下文）。
 
 规格标识（仓库名）：`4.3-tft-480x800-mipi-st7102`
 
-当前模组版本：**YDP430BT009-V1**。电气与外形细节以 [`docs/YDP_430_BT_009_V1_a418b8470b.pdf`](./docs/YDP_430_BT_009_V1_a418b8470b.pdf) 为准。
+---
 
-## 规格参数
+## 版本一览
 
-| 项目 | 规格 |
-| ---- | ---- |
-| 尺寸 | 4.3 英寸 |
-| 类型 | TFT（彩色） |
-| 分辨率 | 480×800 |
-| 接口 | MIPI DSI |
-| 驱动 IC | ST7102 |
-| 触摸驱动 | ST7123 |
+| 版本 | 宣传图 | 说明 |
+| ---- | ------ | ---- |
+| YDP430BT009-V1 | <img alt="YDP430BT009-V1" src="./images/YDP430BT009-V1.png" width="120" /> | [查看详情](#ydp430bt009-v1) |
 
-> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
+---
 
-## 示例工程
+## YDP430BT009-V1
 
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-P4 · ST7102 MIPI + esp-lvgl-port / LVGL9 | [`examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/`](./examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/) |
-| ESP32-P4 · 防撕裂 LVGL 演示 | [`examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/`](./examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/) |
-| ESP32-P4 · ST7102 MIPI + SC2336 摄像头预览 | [`examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/`](./examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/) |
-| Linux · RK3566 设备树 + ST7123 触摸参考 | [`examples/linux/`](./examples/linux/) |
+<p align="center"><img alt="YDP430BT009-V1" src="./images/YDP430BT009-V1.png" width="320" /></p>
 
-## 仓库结构
+**说明：** 模组。
 
-```text
-4.3-tft-480x800-mipi-st7102/
-├── README.md
-├── README_EN.md
-├── MODULE_VERSION.md
-├── LICENSE
-├── images/          # README 用图
-├── docs/            # 规格书、驱动手册、初始化等
-└── examples/        # 示例工程
-```
+---
 
-## 相关资料
+## 如何切换分支
 
-### 本产品资料
+完整产品资料在各**版本分支**中；`main` 仅作导航。
 
-| 资料 | 链接 |
-| ---- | ---- |
-| 产品规格书（YDP430BT009-V1） | [`docs/YDP_430_BT_009_V1_a418b8470b.pdf`](./docs/YDP_430_BT_009_V1_a418b8470b.pdf) |
-| 外形图（YDP430BT009-V1） | [`docs/YDP430BT009-V1_外形图.pdf`](./docs/YDP430BT009-V1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| CAD（YDP430B009-V1） | [`docs/YDP430B009-V1.dwg`](./docs/YDP430B009-V1.dwg) |
-| 驱动 IC 数据手册（ST7102） | [`docs/ST7102_Datasheet_V0.22.pdf`](./docs/ST7102_Datasheet_V0.22.pdf) |
-| 初始化序列（C） | [`docs/GX09C_ST7102+BOE4.3_2LANE_90HZ.c`](./docs/GX09C_ST7102+BOE4.3_2LANE_90HZ.c) |
-| 时序配置参考图（90 Hz） | [`docs/RGB_Output_Timing_90Hz.jpg`](./docs/RGB_Output_Timing_90Hz.jpg) |
-| 4.3 寸 LCD 转接板原理图 | [`docs/4.3寸LCD转接板V1.0.pdf`](./docs/4.3%E5%AF%B8LCD%E8%BD%AC%E6%8E%A5%E6%9D%BFV1.0.pdf) |
+- **网页：** 在仓库页左上角打开分支下拉框，选择与料号对应的版本分支即可。
+- **命令行：** 克隆本仓库后执行 `git checkout <版本分支名>`；若本地已有仓库，先 `git fetch` 再切换。
 
-### 示例工程
-
-- [ESP32-P4 ST7102 MIPI + LVGL9](./examples/esp32p4-idf5_st7102-mipi_esp-lvgl-port_lvgl9/)
-- [ESP32-P4 防撕裂 LVGL 演示](./examples/with-te/p4-idf_st7102-mipi_lvgl-common-demo/)
-- [ESP32-P4 ST7102 MIPI + SC2336 摄像头预览](./examples/camera/esp32p4-idf5_st7102-mipi-dsi_sc2336-mipi-csi_video-lcd-display/)
-- [Linux RK3566 + ST7123 参考](./examples/linux/)
+---
 
 ## 购买链接
 
 <p align="center">
   <a href="https://shop110742373.taobao.com/"><img alt="淘宝官方店铺" src="https://img.shields.io/badge/淘宝-官方店铺-FF6A00?style=for-the-badge" /></a>
   &nbsp;&nbsp;
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
 </p>
 
 **国内（淘宝）**
@@ -106,6 +74,8 @@ OSPTEK **4.3 寸 480×800 TFT** 是一款 **MIPI DSI** 接口彩色显示模组�
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+---
 
 ## 技术支持
 
